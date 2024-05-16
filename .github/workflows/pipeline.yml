@@ -34,8 +34,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: unit test
-        run: echo "hallo"
+      - name: Unit Tests
+        run: grep Welcome src/index.html
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
